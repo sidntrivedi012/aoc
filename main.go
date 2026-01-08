@@ -7,6 +7,7 @@ import (
 	"os"
 
 	"github.com/sidntrivedi012/aoc/q1"
+	"github.com/sidntrivedi012/aoc/q2"
 	"github.com/sidntrivedi012/aoc/utils"
 )
 
@@ -38,11 +39,8 @@ func main() {
 	switch *question {
 	case 1:
 		ans = q1.Solve(lines)
-	// Add more cases as you create more solutions:
-	// case 2:
-	//     part1, part2 = q2.Solve(lines)
-	// case 3:
-	//     part1, part2 = q3.Solve(lines)
+	case 2:
+		ans = q2.Solve(lines)
 	default:
 		log.Fatalf("Solution for question %d not implemented yet", *question)
 	}

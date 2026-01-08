@@ -34,10 +34,10 @@ func main() {
 	}
 
 	// Run the appropriate solution
-	var part1, part2 int
+	var ans int
 	switch *question {
 	case 1:
-		part1, part2 = q1.Solve(lines)
+		ans = q1.Solve(lines)
 	// Add more cases as you create more solutions:
 	// case 2:
 	//     part1, part2 = q2.Solve(lines)
@@ -49,7 +49,5 @@ func main() {
 
 	// Print results
 	fmt.Printf("Question %d Results:\n", *question)
-	fmt.Printf("Part 1: %d\n", part1)
-	fmt.Printf("Part 2: %d\n", part2)
+	fmt.Printf("Answer: %d\n", ans)
 }
-

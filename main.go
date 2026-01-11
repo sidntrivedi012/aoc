@@ -9,6 +9,7 @@ import (
 	"github.com/sidntrivedi012/aoc/q1"
 	"github.com/sidntrivedi012/aoc/q2"
 	"github.com/sidntrivedi012/aoc/q3"
+	"github.com/sidntrivedi012/aoc/q4"
 	"github.com/sidntrivedi012/aoc/utils"
 )
 
@@ -44,6 +45,8 @@ func main() {
 		ans = q2.Solve(lines)
 	case 3:
 		ans = q3.Solve(lines)
+	case 4:
+		ans = q4.Solve(lines)
 	default:
 		log.Fatalf("Solution for question %d not implemented yet", *question)
 	}
